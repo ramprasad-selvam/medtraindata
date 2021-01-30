@@ -26,7 +26,7 @@ export default class App extends Component {
   render() {
     const { data, isLoading } = this.state;
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ flex: 1, alignItems: 'center ', justifyContent: 'center' }}>
         {isLoading && data.length ? <ActivityIndicator /> :
           data.map((item, i) => {
             return <Text key={i}>{item.title}, {item.releaseYear}</Text>
